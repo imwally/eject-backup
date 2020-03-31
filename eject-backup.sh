@@ -17,10 +17,3 @@ fi
     diskutil unmount $VOLUME_PATH &&
     osascript -e 'display notification "Backup disk successfully ejected." with title "✅ Eject Backup"' ||
 	osascript -e 'display notification "No backup disk found." with title "🚫 Eject Backup"'
-	
-
-
-
-
-
-    
