@@ -7,8 +7,8 @@ all:
 	@mkdir -p $(APP_PATH)/{MacOS,Resources}
 	@cp $(SCRIPT) $(APP_PATH)/MacOS/$(APP_NAME)
 	@cp $(ICON) $(APP_PATH)/Resources/$(APP_NAME).icns
+	@cp Info.plist $(APP_PATH)
 	@chmod +x $(APP_PATH)/MacOS/$(APP_NAME)
-	@touch $(APP_NAME).app
 
 clean:
 	@rm -rf $(APP_NAME).app
